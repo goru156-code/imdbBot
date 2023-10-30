@@ -1,8 +1,8 @@
 apiVersion: okteto.com/v1
-kind: OktetoCompose
+kind: devType
 spec:
-  service:
-    name: my-bot
-    image: my-bot-image
-    ports:
-      - "8443:8443"
+  name: my-devtype
+  image: my-image
+  ports:
+    - 8080:8080
+    
