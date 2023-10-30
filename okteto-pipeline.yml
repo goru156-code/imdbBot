@@ -1,3 +1,8 @@
-icon: https://raw.githubusercontent.com/goru156-code/imdbBot/blob/main/
-deploy:
-    - okteto deploy --build -f docker-compose.yml
+apiVersion: okteto.com/v1
+kind: OktetoCompose
+spec:
+  service:
+    name: my-bot
+    image: my-bot-image
+    ports:
+      - "8443:8443"
