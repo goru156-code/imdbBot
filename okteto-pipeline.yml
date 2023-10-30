@@ -1,8 +1,4 @@
-apiVersion: okteto.com/v1
-kind: devType
-spec:
-  name: my-devtype
-  image: my-image
-  ports:
-    - 8080:8080
-    
+version: "3.9"
+services:
+  worker:
+    build: .
